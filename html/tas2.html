@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-color:#f3f8fc;
+        }
+        #outer{
+            height:550px;
+            width:100%;
+            border:1px solid #f3f8fc;
+            padding-top:30px;
+            font-family: calibri;
+            font-weight: bold;
+        }
+        #r1{
+            height:50px;
+            width:100%;
+            background-color:#f8faf9;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 2px 1px gray;
+        }
+        #r2{
+            height:50px;
+            width:100%;
+            background-color: black;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 2px 1px gray;
+        }
+        #r3{
+            height:50px;
+            width:100%;
+            background-color: white;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 2px 1px gray;
+        }
+        #r4{
+            height:50px;
+            width:100%;
+            background-color:#eff6fe;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 2px 1px gray;
+        }
+        #r5{
+            height:50px;
+            width:100%;
+            background-color: blue;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 2px 1px gray;
+        }
+        #r1c1{
+            height:50px;
+            width:20%;
+            float: left;
+        }
+        #r1c2{
+            height:50px;
+            width:60%;
+            float: left;
+        }
+        #r1c3{
+            height:50px;
+            width:20%;
+            float: left;
+            text-align: right;
+        }
+        #r2c1{
+            height:50px;
+            width:20%;
+            float: left;
+        }
+        #r2c2{
+            height:50px;
+            width:60%;
+            float: left;
+        }
+        #r2c3{
+            height:50px;
+            width:20%;
+            float: left;
+            text-align: right;
+        }
+        #r3c1{
+            height:50px;
+            width:25%;
+            float: left;
+        }
+        #r3c2{
+            height:50px;
+            width:50%;
+            float: left;
+        }
+        #r3c3{
+            height:50px;
+            width:25%;
+            float: left;
+            text-align: right;
+        }
+        #r4c1{
+            height:50px;
+            width:25%;
+            float: left;
+        }
+        #r4c2{
+            height:50px;
+            width:50%;
+            float: left;
+            background-color: white;
+            border-radius: 20px
+        }
+        #r4c3{
+            height:50px;
+            width:25%;
+            float: left;
+            text-align: right;
+        }
+        #r5c1{
+            height:50px;
+            width:20%;
+            float: left;
+        }
+        #r5c2{
+            height:50px;
+            width:60%;
+            float: left;
+        }
+        #r5c3{
+            height:50px;
+            width:20%;
+            float: left;
+            text-align: right;
+        }
+        #r1 ul{
+            list-style-type:none;
+        }
+        #r1 ul li{
+            display: inline;
+        }
+        #r1 ul li a{
+            text-decoration: none;
+            color:black;
+            font-weight: 700;
+            /* line-height: 50px; */
+            margin-left:40px;
+            margin-bottom: 20px;
+            font-size: 19px;
+        }
+        #r1 ul li a:hover{
+            color:blue;
+            border-bottom: 2px solid blue;
+        }
+        #b1{
+            background-color: blue;
+            color: white;
+            font-weight: 700;
+            border: 1px solid blue;
+            border-radius: 10px;
+            padding:8px 12px;
+            margin:6px 15px 5px 0px;
+        }
+        #r2 ul{
+            list-style-type:none;
+        }
+        #r2 ul li{
+            display: inline;
+        }
+        #r2 ul li a{
+            text-decoration: none;
+            color:white;
+            font-weight: 700;
+            /* line-height: 50px; */
+            margin-left:40px;
+            font-size: 19px;
+        }
+        #r2 ul li a:hover{
+            color:blue;
+            border-bottom: 2px solid blue;
+        }
+        #r3 ul{
+            list-style-type:none;
+        }
+        #r3 ul li{
+            display: inline;
+        }
+        #r3 ul li a{
+            text-decoration: none;
+            color:black;
+            font-weight: 700;
+            /* line-height: 50px; */
+            margin-left:40px;
+            /* padding-right: 10px; */
+            margin-bottom: 20px;
+            font-size: 19px;
+        }
+        #r3 ul li a:hover{
+            color:blue;
+            border-bottom: 2px solid blue;
+        }
+        #b2{
+            border: 1px solid blue;
+            color: blue;
+            background-color: white;
+            font-weight: 700;
+            width: 80px;
+            border-radius: 20px;
+            padding: 8px;
+            margin:6px 15px 5px 0px;
+        }
+        #r4 ul{
+            list-style-type:none;
+        }
+        #r4 ul li{
+            display: inline;
+        }
+        #r4 ul li a{
+            text-decoration: none;
+            color:black;
+            font-weight: 700;
+            /* line-height: 50px; */
+            margin-left:40px;
+            margin-bottom: 20px;
+            padding-right:10px;
+            font-size: 19px;
+        }
+        #r4 ul li a:hover{
+            color:blue;
+            border-bottom: 2px solid blue;
+            /* background-color: #e3effd; */
+            /* border-radius:10px; */
+            /* padding: 10px; */
+        }
+        #r5 ul{
+            list-style-type:none;
+        }
+        #r5 ul li{
+            display: inline;
+        }
+        #r5 ul li a{
+            text-decoration: none;
+            color:white;
+            font-weight: 700;
+            /* line-height: 50px; */
+            margin-left:40px;
+            margin-bottom: 20px;
+            font-size: 19px;
+        }
+        #r5 ul li a:hover{
+            color:white;
+            border-bottom: 2px solid white;
+        }
+        #b3{
+            border: 1px solid white;
+            color: white;
+            background-color: blue;
+            font-weight: 700;
+            width: 100px;
+            border-radius: 20px;
+            padding: 8px;
+            margin:6px 15px 5px 0px;
+        }
+    </style>
+</head>
+<body>
+    <div id="outer">
+        1. Classic Clean Header 
+        <div id="r1">
+           <div id="r1c1">
+            <img src="logo.png" alt="nature" height="50px" width="150px" style="border-radius: 10px;">
+           </div>
+           <div id="r1c2">
+             <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+           </div>
+           <div id="r1c3">
+            <input type="button" name="" id="b1" value="Get Started">
+           </div>
+        </div>
+        2. Dark Theme Header 
+        <div id="r2">
+           <div id="r2c1">
+            <img src="logo1.png" alt="nature" height="50px" width="150px" style="border-radius: 10px;">
+           </div>
+           <div id="r2c2">
+             <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+           </div>
+           <div id="r2c3">
+        
+           </div>
+        </div>
+        3. Minimal with logo Left & Button Right 
+        <div id="r3">
+           <div id="r3c1">
+            <img src="logo.png" alt="nature" height="50px" width="150px" style="border-radius: 10px;">
+           </div>
+           <div id="r3c2">
+             <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <!-- <li><a href="#">Blog</a></li> -->
+                <li><a href="#">Contact</a></li>
+            </ul>
+           </div>
+           <div id="r3c3">
+            <input type="button" name="" id="b2" value="Login">
+           </div>
+        </div>
+        4. Modern Card Style Header 
+        <div id="r4">
+           <div id="r4c1">
+            <img src="logo.png" alt="nature" height="50px" width="150px" style="border-radius: 10px;">
+           </div>
+           <div id="r4c2">
+             <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <!-- <li><a href="#">Blog</a></li> -->
+                <li><a href="#">Contact</a></li>
+            </ul>
+           </div>
+           <div id="r4c3">
+            
+           </div>
+        </div>
+        5. Image/ Gradient Header 
+        <div id="r5">
+           <div id="r5c1">
+            <img src="logo.png" alt="nature" height="50px" width="150px" style="border-radius: 10px;">
+           </div>
+           <div id="r5c2">
+             <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+           </div>
+           <div id="r5c3">
+            <input type="button" name="" id="b3" value="Get in Touch">
+           </div>
+        </div>
+    </div>
+</body>
+</html>
